@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+	<html>
+    <body bgcolor="#0b225c">
+    <style>
+    h1 {
+    	color: red;
+        font-family: verdana;
+        font-size: 100%;
+        }
+    p {
+    	color: blue;
+        font-family: Trebuchet MS;
+        font-size: 100%;
+      }
+    </style>
+<div class="wrapper">
+            <form class="form1" action="~/MyFiles/Code/html/Github info website/homepage.html">
+                <div class="formtitle">
+                    <h1>Enter the pin to proceed</h1>
+                </div>
 
+                <div class="input nobottomborder">
+                    <div class="inputtext">
+                       <p>Pin:</p>
+                    </div>
+
+                    <div class="inputcontent">
+                        <input type="password" id="password"><br/>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <br><input class="orangebutton" type="button" value="Login" onclick="checkPassword()" />
+                </div>
+            </form>
+        </div>
+       <script>
+      function checkPassword(){
+       if(document.getElementById('password').value == '9624'){
+        alert('Good job kid, password is right!');
+          location.href = "";
+         } else {
+         alert('password is wrong you dumb person');
+          return false;
+        }
+       }
+      </script>
+      </body>
+      </html>
